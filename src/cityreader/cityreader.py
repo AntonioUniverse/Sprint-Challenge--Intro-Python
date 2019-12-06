@@ -3,8 +3,8 @@
 class City:
     def __init__(self, name, lat, lon):
         self.name = name
-        self.lat = lat
-        self.lon = lon
+        self.lat = float(lat)
+        self.lon = float(lon)
     def __repr__(self):
       return f'City: {self.name}, Lat: {self.lat}, Lon: {self.lon}'
 
